@@ -1,4 +1,5 @@
 using System;
+using System.Threading;
 using CustomExceptions;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using VenronX_Gauges;
@@ -112,10 +113,35 @@ namespace GaugeLibraryTest
         }
 
         //***ACCELEROMETER**//
-        [TestMethod]
-        public void TestMethod()
-        {
 
+        //test getting start time vs end time
+        [TestMethod]
+        public void TestStartTimeAndEndTime()
+        {
+            var start = _acc.Start;
+            Thread.Sleep(5000);
+            var end = _acc.End;
+            //System.Console.WriteLine(start + " " + end);
+            Assert.AreEqual(_acc.TimeFromStartToEnd, 5);
+        }
+
+        //test acceleration value
+        [TestMethod]
+        public void GetAccelerationValue()
+        {
+            //Arrange
+            //set start/end times
+            var start = _acc.Start;
+            Thread.Sleep(4000);
+            var end = _acc.End;
+            //set end velocity
+            _acc.EndingVelocity = 40;
+            //Act
+            //call acceleration method
+            var accelerationValue = _acc.GettingAcceleration();
+            //Assert
+            //test piece by piece if necessary
+            Assert.AreEqual(accelerationValue, 10);
         }
     }
 }
