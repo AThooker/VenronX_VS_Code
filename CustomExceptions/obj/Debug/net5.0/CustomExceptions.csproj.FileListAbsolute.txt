@@ -1,0 +1,12 @@
+c:\Users\austin.hooker\MiscProjects\VenronX_VS_Code\CustomExceptions\bin\Debug\net5.0\CustomExceptions.deps.json
+c:\Users\austin.hooker\MiscProjects\VenronX_VS_Code\CustomExceptions\bin\Debug\net5.0\CustomExceptions.dll
+c:\Users\austin.hooker\MiscProjects\VenronX_VS_Code\CustomExceptions\bin\Debug\net5.0\ref\CustomExceptions.dll
+c:\Users\austin.hooker\MiscProjects\VenronX_VS_Code\CustomExceptions\bin\Debug\net5.0\CustomExceptions.pdb
+c:\Users\austin.hooker\MiscProjects\VenronX_VS_Code\CustomExceptions\obj\Debug\net5.0\CustomExceptions.csproj.AssemblyReference.cache
+c:\Users\austin.hooker\MiscProjects\VenronX_VS_Code\CustomExceptions\obj\Debug\net5.0\CustomExceptions.GeneratedMSBuildEditorConfig.editorconfig
+c:\Users\austin.hooker\MiscProjects\VenronX_VS_Code\CustomExceptions\obj\Debug\net5.0\CustomExceptions.AssemblyInfoInputs.cache
+c:\Users\austin.hooker\MiscProjects\VenronX_VS_Code\CustomExceptions\obj\Debug\net5.0\CustomExceptions.AssemblyInfo.cs
+c:\Users\austin.hooker\MiscProjects\VenronX_VS_Code\CustomExceptions\obj\Debug\net5.0\CustomExceptions.csproj.CoreCompileInputs.cache
+c:\Users\austin.hooker\MiscProjects\VenronX_VS_Code\CustomExceptions\obj\Debug\net5.0\CustomExceptions.dll
+c:\Users\austin.hooker\MiscProjects\VenronX_VS_Code\CustomExceptions\obj\Debug\net5.0\ref\CustomExceptions.dll
+c:\Users\austin.hooker\MiscProjects\VenronX_VS_Code\CustomExceptions\obj\Debug\net5.0\CustomExceptions.pdb

@@ -1,0 +1,15 @@
+C:\Users\austin.hooker\MiscProjects\VenronX_VS_Code\VenronX_Gauges\bin\Debug\net5.0\VenronX_Gauges.deps.json
+C:\Users\austin.hooker\MiscProjects\VenronX_VS_Code\VenronX_Gauges\bin\Debug\net5.0\VenronX_Gauges.dll
+C:\Users\austin.hooker\MiscProjects\VenronX_VS_Code\VenronX_Gauges\bin\Debug\net5.0\ref\VenronX_Gauges.dll
+C:\Users\austin.hooker\MiscProjects\VenronX_VS_Code\VenronX_Gauges\bin\Debug\net5.0\VenronX_Gauges.pdb
+C:\Users\austin.hooker\MiscProjects\VenronX_VS_Code\VenronX_Gauges\obj\Debug\net5.0\VenronX_Gauges.csproj.AssemblyReference.cache
+C:\Users\austin.hooker\MiscProjects\VenronX_VS_Code\VenronX_Gauges\obj\Debug\net5.0\VenronX_Gauges.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\austin.hooker\MiscProjects\VenronX_VS_Code\VenronX_Gauges\obj\Debug\net5.0\VenronX_Gauges.AssemblyInfoInputs.cache
+C:\Users\austin.hooker\MiscProjects\VenronX_VS_Code\VenronX_Gauges\obj\Debug\net5.0\VenronX_Gauges.AssemblyInfo.cs
+C:\Users\austin.hooker\MiscProjects\VenronX_VS_Code\VenronX_Gauges\obj\Debug\net5.0\VenronX_Gauges.csproj.CoreCompileInputs.cache
+C:\Users\austin.hooker\MiscProjects\VenronX_VS_Code\VenronX_Gauges\obj\Debug\net5.0\VenronX_Gauges.dll
+C:\Users\austin.hooker\MiscProjects\VenronX_VS_Code\VenronX_Gauges\obj\Debug\net5.0\ref\VenronX_Gauges.dll
+C:\Users\austin.hooker\MiscProjects\VenronX_VS_Code\VenronX_Gauges\obj\Debug\net5.0\VenronX_Gauges.pdb
+c:\Users\austin.hooker\MiscProjects\VenronX_VS_Code\VenronX_Gauges\bin\Debug\net5.0\CustomExceptions.dll
+c:\Users\austin.hooker\MiscProjects\VenronX_VS_Code\VenronX_Gauges\bin\Debug\net5.0\CustomExceptions.pdb
+c:\Users\austin.hooker\MiscProjects\VenronX_VS_Code\VenronX_Gauges\obj\Debug\net5.0\VenronX_Gauges.csproj.CopyComplete

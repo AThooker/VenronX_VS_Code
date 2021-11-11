@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v5.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v5.0": {
+      "VenronX_Gauges/1.0.0": {
+        "runtime": {
+          "VenronX_Gauges.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "VenronX_Gauges/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}
