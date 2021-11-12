@@ -7,25 +7,7 @@ namespace VenronX_Gauges
     {
         //measured in psi
         //10-15 psi at idle, 30-40 psi at drive (on avg)
-        public int Pressure 
-        {
-            get{return Pressure;}
-            set{
-                try
-                {
-                     Pressure = value;
-                     if(value >= max)
-                     {
-                         throw new OilPressureAtMaxException(max);
-                     }
-                }
-                catch (OilPressureAtMaxException)
-                {
-                    
-                    Console.WriteLine("Oil Pressure too high, engine shutting down");
-                }
-            }
-        }
+        public int Pressure { get; set; }
         private int min = 5;
         private int max = 65;
         public Tuple<int, int> OilPressureMinMax

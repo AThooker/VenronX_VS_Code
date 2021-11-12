@@ -5,26 +5,20 @@ namespace VenronX_Gauges
     public class Accelerometer
     {
         private double fastestAccel;
-        public DateTime Start
+        public double FastestAccel
         {
             get
             {
-                return DateTime.Now;
+                return fastestAccel;
             }
         }
-        public DateTime End
-        {
-            get
-            {
-                return DateTime.Now;
-            }
-        }
+        public DateTime End { get; set; }
+        public DateTime Start { get; set; }
         public double TimeFromStartToEnd
         {
             get
             {
-                TimeSpan secondsOfAccel = End - Start;
-                return secondsOfAccel.TotalSeconds;
+                return Math.Round(End.Subtract(Start).TotalSeconds, 0);
             }
         }
         public int StartingVelocity { get; set; } = 0;
@@ -34,13 +28,13 @@ namespace VenronX_Gauges
         //A = (EndingV - StartingV) / time
         public double GettingAcceleration()
         {
-          var velocityDifference = EndingVelocity - StartingVelocity;
-          var acceleration = velocityDifference / TimeFromStartToEnd;
-          if(acceleration > fastestAccel)
-          {
-              fastestAccel = acceleration;
-          }  
-          return Math.Round(acceleration, 3);
+            var velocityDifference = EndingVelocity - StartingVelocity;
+            var acceleration = velocityDifference / TimeFromStartToEnd;
+            if (acceleration > fastestAccel)
+            {
+                fastestAccel = acceleration;
+            }
+            return Math.Round(acceleration, 3);
         }
 
     }

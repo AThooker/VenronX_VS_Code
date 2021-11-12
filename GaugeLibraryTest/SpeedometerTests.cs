@@ -7,11 +7,10 @@ using VenronX_Gauges;
 namespace GaugeLibraryTest
 {
     [TestClass]
-    public class UnitTest1
+    public class SpeedometerTests
     {
         Speedometer _speed;
         Tachometer _tach;
-        OilPressure _oil;
         Ammeter _ammeter;
         Accelerometer _acc;
         [TestInitialize]
@@ -19,7 +18,6 @@ namespace GaugeLibraryTest
         {
             _speed = new Speedometer();
             _tach = new Tachometer();
-            _oil = new OilPressure();
             _ammeter = new Ammeter();
             _acc = new Accelerometer();
         }
@@ -118,22 +116,23 @@ namespace GaugeLibraryTest
         [TestMethod]
         public void TestStartTimeAndEndTime()
         {
-            var start = _acc.Start;
-            Thread.Sleep(5000);
-            var end = _acc.End;
+            _acc.Start = DateTime.Now;
+            Thread.Sleep(8000);
+            _acc.End = DateTime.Now;
+            var timeDiff = _acc.TimeFromStartToEnd;
             //System.Console.WriteLine(start + " " + end);
-            Assert.AreEqual(_acc.TimeFromStartToEnd, 5);
+            Assert.AreEqual(timeDiff, 8);
         }
 
         //test acceleration value
-        [TestMethod]
+       [TestMethod]
         public void GetAccelerationValue()
         {
             //Arrange
             //set start/end times
-            var start = _acc.Start;
+            _acc.Start = DateTime.Now;
             Thread.Sleep(4000);
-            var end = _acc.End;
+            _acc.End = DateTime.Now;
             //set end velocity
             _acc.EndingVelocity = 40;
             //Act
@@ -142,6 +141,26 @@ namespace GaugeLibraryTest
             //Assert
             //test piece by piece if necessary
             Assert.AreEqual(accelerationValue, 10);
+        }
+        //test fastest acceleration saved for later eval
+        [TestMethod]
+        public void TestFastestAccelerationStored()
+        {
+            _acc.Start = DateTime.Now;
+            Thread.Sleep(4000);
+            _acc.End = DateTime.Now;
+            _acc.EndingVelocity = 40;
+            var accelerationValueOne = _acc.GettingAcceleration();
+
+            _acc.Start = DateTime.Now;
+            Thread.Sleep(5000);
+            _acc.End = DateTime.Now;
+            _acc.EndingVelocity = 150;
+            var accelerationValueTwo = _acc.GettingAcceleration();
+
+            Assert.IsTrue(_acc.FastestAccel == 30);
+
+
         }
     }
 }
