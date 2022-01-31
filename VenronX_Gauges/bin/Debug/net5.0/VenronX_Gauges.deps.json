@@ -7,14 +7,27 @@
   "targets": {
     ".NETCoreApp,Version=v5.0": {
       "VenronX_Gauges/1.0.0": {
+        "dependencies": {
+          "CustomExceptions": "1.0.0"
+        },
         "runtime": {
           "VenronX_Gauges.dll": {}
+        }
+      },
+      "CustomExceptions/1.0.0": {
+        "runtime": {
+          "CustomExceptions.dll": {}
         }
       }
     }
   },
   "libraries": {
     "VenronX_Gauges/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "CustomExceptions/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

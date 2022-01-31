@@ -5,7 +5,7 @@ using VenronX_Gauges;
 
 namespace GaugeLibraryTest
 {
-    
+    [TestClass]
     public class TachometerTests
     {
         Tachometer tach;
@@ -24,21 +24,12 @@ namespace GaugeLibraryTest
             var minMaxRed = tach.TachometerMinMaxRedline;
             Assert.AreEqual(minMaxRed, new Tuple<int, int, int>(0,7000,5500));
         } 
-        //get gauge with user-set min/max/redline
-        [TestMethod]
-        public void TestTachometerValuesSetByUser()
-        {
-            tach.TacMin = 50;
-            tach.TacMax = 12000;
-            tach.TacRedline = 9000;
-            Assert.AreEqual(tach.UserTachometerMinMaxRed, new Tuple<int, int, int>(50, 12000, 9000));
-        }
         //set rpm > redline and expect custom exception
         [TestMethod]
         [ExpectedException(typeof(DoNotExceedRedline))]
         public void GetExceptionDoNotExceedRedline()
         {
-            tach.Rpm = 6000;
+            tach.Rpm = 7500;
             tach.TestRpmAgainstRedline();
         }
         

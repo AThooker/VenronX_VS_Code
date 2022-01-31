@@ -1661,9 +1661,22 @@
           "lib/netstandard1.3/System.Xml.XDocument.dll": {}
         }
       },
+      "CustomExceptions/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v5.0",
+        "compile": {
+          "bin/placeholder/CustomExceptions.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/CustomExceptions.dll": {}
+        }
+      },
       "VenronX_Gauges/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v5.0",
+        "dependencies": {
+          "CustomExceptions": "1.0.0"
+        },
         "compile": {
           "bin/placeholder/VenronX_Gauges.dll": {}
         },
@@ -6114,6 +6127,11 @@
         "system.xml.xdocument.nuspec"
       ]
     },
+    "CustomExceptions/1.0.0": {
+      "type": "project",
+      "path": "../CustomExceptions/CustomExceptions.csproj",
+      "msbuildProject": "../CustomExceptions/CustomExceptions.csproj"
+    },
     "VenronX_Gauges/1.0.0": {
       "type": "project",
       "path": "../VenronX_Gauges/VenronX_Gauges.csproj",
@@ -6122,6 +6140,7 @@
   },
   "projectFileDependencyGroups": {
     "net5.0": [
+      "CustomExceptions >= 1.0.0",
       "MSTest.TestAdapter >= 2.2.3",
       "MSTest.TestFramework >= 2.2.3",
       "Microsoft.NET.Test.Sdk >= 16.9.4",
@@ -6161,6 +6180,9 @@
         "net5.0": {
           "targetAlias": "net5.0",
           "projectReferences": {
+            "C:\\Users\\austin.hooker\\MiscProjects\\VenronX_VS_Code\\CustomExceptions\\CustomExceptions.csproj": {
+              "projectPath": "C:\\Users\\austin.hooker\\MiscProjects\\VenronX_VS_Code\\CustomExceptions\\CustomExceptions.csproj"
+            },
             "C:\\Users\\austin.hooker\\MiscProjects\\VenronX_VS_Code\\VenronX_Gauges\\VenronX_Gauges.csproj": {
               "projectPath": "C:\\Users\\austin.hooker\\MiscProjects\\VenronX_VS_Code\\VenronX_Gauges\\VenronX_Gauges.csproj"
             }
@@ -6209,7 +6231,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.403\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.404\\RuntimeIdentifierGraph.json"
       }
     }
   }

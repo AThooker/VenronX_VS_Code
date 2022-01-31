@@ -7,7 +7,7 @@ namespace CustomExceptions
         public DoNotExceedRedline(int redlineValue)
         :base(String.Format("Do not exceed the suggested rpm: " + redlineValue))
         {
-            System.Console.WriteLine("WARNING...do not exceed the suggested rpm: " + redlineValue);
+            Console.WriteLine(Message);
         }
     }
 }

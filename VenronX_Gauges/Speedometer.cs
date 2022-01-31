@@ -2,30 +2,30 @@
 
 namespace VenronX_Gauges
 {
-    public class Speedometer
+    class Speedometer : Gauge
     {
-        public int Speed { get; set; }
-        //First time using Tuple(used so developer can use a data structure wihtout having to create a new type (i.e. another class specifically to hold Min/Max together))
+        //Do we need a value to capture the actual speed? if so, why?
+        // public int Speed { get; set; }
 
-        //without user input
-        private int _speedometerMin = 0;
-        private int _speedometerMax = 250;
-        public Tuple<int, int> SpeedometerSetMinMax
+        //Without user input
+        //min is set to 0 in abstract class
+        //override gauge for speedometer max
+        public override int Max { get; set; } = 200;
+
+        //max set by user
+        public int MaxUserSet { get; set; }
+        //First time using Tuple (tuples are used to harness a data structure without having to create a new type (i.e. another class specifically for SpeedometerMin/Max)
+        public Tuple<int, int> SpeedometerMinMax
         {
             get
             {
-                return Tuple.Create(_speedometerMin, _speedometerMax);
-            }
-        }
-
-        //With user input
-        public int UserSetMin { get; set; }
-        public int UserSetMax { get; set; }
-        public Tuple<int, int> UserSpeedometerMinMax
-        {
-            get
-            {
-                return Tuple.Create(UserSetMin, UserSetMax);
+                //instead of having two different tuples (one for user input and another for developer-set max)
+                // just returning min/max for userSet if it has value and developer-set if userSet is omitted
+                if(MaxUserSet > 0)
+                {
+                    return Tuple.Create(Min, MaxUserSet);
+                }
+                return Tuple.Create(Min, Max);
             }
         }
     }

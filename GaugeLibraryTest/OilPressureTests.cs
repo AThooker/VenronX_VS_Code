@@ -22,16 +22,16 @@ namespace GaugeLibraryTest
         public void TestOilPressureValues()
         {
             var minMaxOil = _oil.OilPressureMinMax;
-            Assert.AreEqual(minMaxOil, new Tuple<int, int>(5, 65));
+            Assert.AreEqual(minMaxOil, new Tuple<int, int>(0, 45));
         }
         //get user set values for min/max oil pressure
         [TestMethod]
-        public void TestOilPressureUserSetValues()
+        public void TestOilPressureUnequalValues()
         {
-            _oil.Min = 10;
-            _oil.Max = 70;
-            var userGauge = _oil.UserOilPressureMinMax;
-            Assert.AreEqual(userGauge, new Tuple<int, int>(10,70));
+            //can set _oil.Max to change the oil pressure max and test the difference
+            //oil.Max = 70;
+            var userGauge = _oil.OilPressureMinMax;
+            Assert.AreNotEqual(userGauge, new Tuple<int, int>(10,60));
         }
         //set pressure > max value and expect custome exception (output engine shutdown)
         [TestMethod]

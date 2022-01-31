@@ -7,7 +7,7 @@ namespace CustomExceptions
         public OilPressureAtMaxException(int pressureMax)
         :base(string.Format("Engine software will shut down, oil pressure over max value: " + pressureMax))
         {
-            Console.WriteLine("Engine shutting down");
+            Console.WriteLine(Message);
         }
     }
 }

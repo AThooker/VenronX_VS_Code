@@ -1,8 +1,9 @@
 namespace VenronX_Gauges
 {
-    public class Gauge
+    //every class has a min and max, some have preset Max, all have preset min = 0;
+    abstract class Gauge
     {
-        public int Min { get; set; }
-        public int Max { get; set; }
+        public virtual int Max { get; set; }
+        public virtual int Min { get; } = 0;
     }
 }
