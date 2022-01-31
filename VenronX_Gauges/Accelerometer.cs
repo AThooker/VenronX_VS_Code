@@ -1,41 +1,43 @@
 using System;
+using System.Collections.Generic;
+using System.Linq;
 
 namespace VenronX_Gauges
 {
-    public class Accelerometer
+    //min/max with highest level reach stored for later analysis
+    partial class Accelerometer : Gauge
     {
-        private double fastestAccel;
-        public double FastestAccel
-        {
-            get
-            {
-                return fastestAccel;
-            }
-        }
-        public DateTime End { get; set; }
-        public DateTime Start { get; set; }
+        public override int Max { get; set; } = 0;
+        Random rnd = new Random();
+        public List<double> HighestAccelerations { get; set; } = new List<double>(){0};
         public double TimeFromStartToEnd
         {
             get
             {
-                return Math.Round(End.Subtract(Start).TotalSeconds, 0);
+                return rnd.Next(0,10);
             }
         }
-        public int StartingVelocity { get; set; } = 0;
-        public int EndingVelocity { get; set; }
+        public double VelocityDifference
+        {
+            get
+            {
+                return rnd.Next(40, 60);
+            }
+        }
 
         // Accleration formula: 
         //A = (EndingV - StartingV) / time
-        public double GettingAcceleration()
+        public double GettingNewAcceleration()
         {
-            var velocityDifference = EndingVelocity - StartingVelocity;
-            var acceleration = velocityDifference / TimeFromStartToEnd;
-            if (acceleration > fastestAccel)
+            var time = rnd.Next(0,10);
+            var veloDiff = rnd.Next(40,60);
+            var acceleration = veloDiff / time;
+            if (acceleration > Max)
             {
-                fastestAccel = acceleration;
+                HighestAccelerations.Add(acceleration);
+                Max = Convert.ToInt32(acceleration);
             }
-            return Math.Round(acceleration, 3);
+            return Math.Round(Convert.ToDouble(acceleration), 3);
         }
-
     }
 }

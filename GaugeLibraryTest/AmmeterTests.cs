@@ -18,9 +18,8 @@ namespace GaugeLibraryTest
         [TestMethod]
         public void GetAndSetMaxAmps()
         {
-            _ammeter.MaxAmps = 30;
-            var maxAmps = _ammeter.MaxAmps;
-            Assert.AreEqual(30, maxAmps);
+            _ammeter.Max = 30;
+            Assert.AreEqual(30, _ammeter.MaxAmps, "values unequal, make sure your Max and MaxAmps are transferable");
         }
     }
 }
