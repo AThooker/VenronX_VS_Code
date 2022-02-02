@@ -19,7 +19,7 @@ namespace GaugeLibraryTest
 
         //***ACCELEROMETER**//
 
-        //test acceleration value
+        //test fastest acceleration saved for later eval
         [TestMethod]
         public void TestFastestAccelerationStored()
         {
@@ -30,7 +30,7 @@ namespace GaugeLibraryTest
             //assert the list's max value is equal to the new acceleration value since the only other value is 0
             Assert.AreEqual(accelerationValue, highestAccel);
         }
-        //test fastest acceleration saved for later eval
+        //test multiple acceleration values
         [TestMethod]
         public void TestMultipleAccelerationsCanBeDifferentForSameObject()
         {

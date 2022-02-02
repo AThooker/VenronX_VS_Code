@@ -31,14 +31,14 @@ namespace GaugeLibraryTest
         [TestMethod]
         public void UserSettingMinMaxSpeedometer()
         {
-            _speed.MaxUserSet = 200;
+            _speed.Max = 250;
             var minMax = _speed.SpeedometerMinMax;
-            Assert.AreEqual(minMax, new Tuple<int, int>(0,200));
+            Assert.AreEqual(minMax, new Tuple<int, int>(0,250));
         }
         [TestMethod]
         public void GettingMinMaxShouldFail()
         {
-            Assert.AreEqual(_speed.SpeedometerMinMax, new Tuple<int, int>(0, 150), "Values are not equal, success");
+            Assert.AreNotEqual(_speed.SpeedometerMinMax, new Tuple<int, int>(0, 150), "Values are equal, fail");
         } 
     }
 }

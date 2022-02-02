@@ -5,6 +5,7 @@ namespace VenronX_Gauges
     {
         //typical amperage is ~ 30 - 75 amps
         //holds min and max values
+
         public int MaxAmps
         {
             get { return Max; }

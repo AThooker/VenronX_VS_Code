@@ -17,9 +17,11 @@ namespace GaugeLibraryTest
         //***TACHOOMETER TESTS***//
 
         //get gauge with min/max/redline
+        //moreso just a test for myself to see if Tuple works this way
         [TestMethod]
         public void TestTachometerValuesSetByDeveloper()
         {
+            //testing tuple return int min, int max, int redlineVal
             //values hard coded at 0,7000,5500
             var minMaxRed = tach.TachometerMinMaxRedline;
             Assert.AreEqual(minMaxRed, new Tuple<int, int, int>(0,7000,5500));
@@ -29,8 +31,8 @@ namespace GaugeLibraryTest
         [ExpectedException(typeof(DoNotExceedRedline))]
         public void GetExceptionDoNotExceedRedline()
         {
-            tach.Rpm = 7500;
-            tach.TestRpmAgainstRedline();
+            Random rnd = new Random();
+            tach.Rpm = rnd.Next(5500,7000);
         }
         
     }
