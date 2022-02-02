@@ -9,6 +9,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GaugeLibraryTest", "GaugeLi
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CustomExceptions", "CustomExceptions\CustomExceptions.csproj", "{9CFA5847-2A9B-40A1-81B5-26797A307285}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VenronConsoleApp", "VenronConsoleApp\VenronConsoleApp.csproj", "{CF779969-0A67-434E-A417-029F2EB4A8E6}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -58,5 +60,17 @@ Global
 		{9CFA5847-2A9B-40A1-81B5-26797A307285}.Release|x64.Build.0 = Release|Any CPU
 		{9CFA5847-2A9B-40A1-81B5-26797A307285}.Release|x86.ActiveCfg = Release|Any CPU
 		{9CFA5847-2A9B-40A1-81B5-26797A307285}.Release|x86.Build.0 = Release|Any CPU
+		{CF779969-0A67-434E-A417-029F2EB4A8E6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CF779969-0A67-434E-A417-029F2EB4A8E6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CF779969-0A67-434E-A417-029F2EB4A8E6}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{CF779969-0A67-434E-A417-029F2EB4A8E6}.Debug|x64.Build.0 = Debug|Any CPU
+		{CF779969-0A67-434E-A417-029F2EB4A8E6}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{CF779969-0A67-434E-A417-029F2EB4A8E6}.Debug|x86.Build.0 = Debug|Any CPU
+		{CF779969-0A67-434E-A417-029F2EB4A8E6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CF779969-0A67-434E-A417-029F2EB4A8E6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CF779969-0A67-434E-A417-029F2EB4A8E6}.Release|x64.ActiveCfg = Release|Any CPU
+		{CF779969-0A67-434E-A417-029F2EB4A8E6}.Release|x64.Build.0 = Release|Any CPU
+		{CF779969-0A67-434E-A417-029F2EB4A8E6}.Release|x86.ActiveCfg = Release|Any CPU
+		{CF779969-0A67-434E-A417-029F2EB4A8E6}.Release|x86.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal

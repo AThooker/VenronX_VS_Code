@@ -6,6 +6,7 @@ namespace VenronX_Gauges
     class Tachometer : Gauge
     {
         //tachometer measures the working speed of an engine, in revolutions per minute (RPM's)
+        //see is setting conditional inside RPM prop works for throwing redLine exc
         public int Rpm { get; set; }
         public override int Max { get; set; } = 7000;
         private int Redline = 5500;
