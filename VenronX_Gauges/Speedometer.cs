@@ -9,7 +9,7 @@ namespace VenronX_Gauges
 
         //min is set to 0 in abstract class
         //override gauge for speedometer max
-        //User CAN set their Max value
+        //User CAN set their Max value here
         public override int Max { get; set; } = 200;
 
         //First time using Tuple (tuples are used to harness a data structure without having to create a new type (i.e. another class specifically for SpeedometerMin/Max)
