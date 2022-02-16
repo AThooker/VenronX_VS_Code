@@ -3,13 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.30114.105
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VenronX_Gauges", "VenronX_Gauges\VenronX_Gauges.csproj", "{0717820A-023F-44EA-9DC1-8E9BAAFFD27F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "VenronX_Gauges", "VenronX_Gauges\VenronX_Gauges.csproj", "{0717820A-023F-44EA-9DC1-8E9BAAFFD27F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GaugeLibraryTest", "GaugeLibraryTest\GaugeLibraryTest.csproj", "{7214229C-5F60-4CE9-9C56-99819451D50C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GaugeLibraryTest", "GaugeLibraryTest\GaugeLibraryTest.csproj", "{7214229C-5F60-4CE9-9C56-99819451D50C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CustomExceptions", "CustomExceptions\CustomExceptions.csproj", "{9CFA5847-2A9B-40A1-81B5-26797A307285}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VenronConsoleApp", "VenronConsoleApp\VenronConsoleApp.csproj", "{CF779969-0A67-434E-A417-029F2EB4A8E6}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CustomExceptions", "CustomExceptions\CustomExceptions.csproj", "{9CFA5847-2A9B-40A1-81B5-26797A307285}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -19,9 +17,6 @@ Global
 		Release|Any CPU = Release|Any CPU
 		Release|x64 = Release|x64
 		Release|x86 = Release|x86
-	EndGlobalSection
-	GlobalSection(SolutionProperties) = preSolution
-		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
 		{0717820A-023F-44EA-9DC1-8E9BAAFFD27F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
@@ -60,17 +55,11 @@ Global
 		{9CFA5847-2A9B-40A1-81B5-26797A307285}.Release|x64.Build.0 = Release|Any CPU
 		{9CFA5847-2A9B-40A1-81B5-26797A307285}.Release|x86.ActiveCfg = Release|Any CPU
 		{9CFA5847-2A9B-40A1-81B5-26797A307285}.Release|x86.Build.0 = Release|Any CPU
-		{CF779969-0A67-434E-A417-029F2EB4A8E6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{CF779969-0A67-434E-A417-029F2EB4A8E6}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{CF779969-0A67-434E-A417-029F2EB4A8E6}.Debug|x64.ActiveCfg = Debug|Any CPU
-		{CF779969-0A67-434E-A417-029F2EB4A8E6}.Debug|x64.Build.0 = Debug|Any CPU
-		{CF779969-0A67-434E-A417-029F2EB4A8E6}.Debug|x86.ActiveCfg = Debug|Any CPU
-		{CF779969-0A67-434E-A417-029F2EB4A8E6}.Debug|x86.Build.0 = Debug|Any CPU
-		{CF779969-0A67-434E-A417-029F2EB4A8E6}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{CF779969-0A67-434E-A417-029F2EB4A8E6}.Release|Any CPU.Build.0 = Release|Any CPU
-		{CF779969-0A67-434E-A417-029F2EB4A8E6}.Release|x64.ActiveCfg = Release|Any CPU
-		{CF779969-0A67-434E-A417-029F2EB4A8E6}.Release|x64.Build.0 = Release|Any CPU
-		{CF779969-0A67-434E-A417-029F2EB4A8E6}.Release|x86.ActiveCfg = Release|Any CPU
-		{CF779969-0A67-434E-A417-029F2EB4A8E6}.Release|x86.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {4CA56D27-53A8-4A98-BC13-D26FD511DA1B}
 	EndGlobalSection
 EndGlobal

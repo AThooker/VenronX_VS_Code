@@ -21,7 +21,7 @@ namespace GaugeLibraryTest
 
         //test each value, then the return of both in tuple property
         [TestMethod]
-        public void GettingMinMaxSpeedShouldPassWithoutUser()
+        public void GettingMinMaxSpeedShouldPassWithoutUserInput()
         {
             Assert.AreEqual(_speed.SpeedometerMinMax.Item1, 0);
             Assert.AreEqual(_speed.SpeedometerMinMax.Item2, 200, "Values are not equal");
@@ -36,7 +36,7 @@ namespace GaugeLibraryTest
             Assert.AreEqual(minMax, new Tuple<int, int>(0,250));
         }
         [TestMethod]
-        public void GettingMinMaxShouldFail()
+        public void TestMinMaxShouldNotBeEqual()
         {
             Assert.AreNotEqual(_speed.SpeedometerMinMax, new Tuple<int, int>(0, 150), "Values are equal, fail");
         } 

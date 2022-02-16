@@ -8,6 +8,7 @@ namespace VenronX_Gauges
         //tachometer measures the working speed of an engine, in revolutions per minute (RPM's)
 
         //see if setting conditional inside RPM prop works for throwing redLine exc
+
         //backing field
         private int _rpm;
         public int Rpm
@@ -25,6 +26,7 @@ namespace VenronX_Gauges
                 _rpm = value;
             }
         }
+        //override max val
         public override int Max { get; set; } = 7000;
         private int Redline = 5500;
         public Tuple<int, int, int> TachometerMinMaxRedline
@@ -36,12 +38,12 @@ namespace VenronX_Gauges
         }
 
         //Exception if rpm is at or exceeds redline value
-        public void TestRpmAgainstRedline()
-        {
-            if(Rpm >= Redline)
-            {
-                throw new DoNotExceedRedline(Redline);
-            }
-        }
+        //public void TestRpmAgainstRedline()
+        //{
+        //    if(Rpm >= Redline)
+        //    {
+        //        throw new DoNotExceedRedline(Redline);
+        //    }
+        //}
     }
 }

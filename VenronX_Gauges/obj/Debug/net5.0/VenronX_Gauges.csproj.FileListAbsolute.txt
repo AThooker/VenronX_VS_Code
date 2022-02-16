@@ -12,4 +12,4 @@ C:\Users\austin.hooker\MiscProjects\VenronX_VS_Code\VenronX_Gauges\obj\Debug\net
 C:\Users\austin.hooker\MiscProjects\VenronX_VS_Code\VenronX_Gauges\obj\Debug\net5.0\VenronX_Gauges.pdb
 c:\Users\austin.hooker\MiscProjects\VenronX_VS_Code\VenronX_Gauges\bin\Debug\net5.0\CustomExceptions.dll
 c:\Users\austin.hooker\MiscProjects\VenronX_VS_Code\VenronX_Gauges\bin\Debug\net5.0\CustomExceptions.pdb
-c:\Users\austin.hooker\MiscProjects\VenronX_VS_Code\VenronX_Gauges\obj\Debug\net5.0\VenronX_Gauges.csproj.CopyComplete
+C:\Users\austin.hooker\MiscProjects\VenronX_VS_Code\VenronX_Gauges\obj\Debug\net5.0\VenronX_Gauges.csproj.CopyComplete
